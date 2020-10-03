@@ -25,7 +25,6 @@ C:\Users\Eugene\GitHubProjects\SignalRChat\ChatApp-SignalR-\obj\Debug\netcoreapp
 C:\Users\Eugene\GitHubProjects\SignalRChat\ChatApp-SignalR-\obj\Debug\netcoreapp3.1\ChatApp-SignalR-.TagHelpers.input.cache
 C:\Users\Eugene\GitHubProjects\SignalRChat\ChatApp-SignalR-\obj\Debug\netcoreapp3.1\ChatApp-SignalR-.TagHelpers.output.cache
 C:\Users\Eugene\GitHubProjects\SignalRChat\ChatApp-SignalR-\obj\Debug\netcoreapp3.1\ChatApp-SignalR-.RazorCoreGenerate.cache
-C:\Users\Eugene\GitHubProjects\SignalRChat\ChatApp-SignalR-\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Eugene\GitHubProjects\SignalRChat\ChatApp-SignalR-\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Eugene\GitHubProjects\SignalRChat\ChatApp-SignalR-\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Eugene\GitHubProjects\SignalRChat\ChatApp-SignalR-\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -36,3 +35,4 @@ C:\Users\Eugene\GitHubProjects\SignalRChat\ChatApp-SignalR-\obj\Debug\netcoreapp
 C:\Users\Eugene\GitHubProjects\SignalRChat\ChatApp-SignalR-\obj\Debug\netcoreapp3.1\ChatApp-SignalR-.csproj.CopyComplete
 C:\Users\Eugene\GitHubProjects\SignalRChat\ChatApp-SignalR-\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
 C:\Users\Eugene\GitHubProjects\SignalRChat\ChatApp-SignalR-\obj\Debug\netcoreapp3.1\Razor\Views\Home\Register.cshtml.g.cs
+C:\Users\Eugene\GitHubProjects\SignalRChat\ChatApp-SignalR-\obj\Debug\netcoreapp3.1\Razor\Views\Home\RoomChat.cshtml.g.cs

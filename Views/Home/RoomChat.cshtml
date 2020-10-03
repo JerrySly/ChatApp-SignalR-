@@ -1,0 +1,24 @@
+@{
+    ViewData["Title"] = "Chat";
+}
+<link rel="stylesheet" href="~/css/chat.css">
+<div id="page">
+    <div id="room-section">
+        <div class="room">Room1</div>
+    </div>
+
+    <div id="text-section">
+        <div id="messages-from-other">
+        </div>
+        <form action="post">
+            <textarea name="message" class="message-block"></textarea>
+            <button type="submit" class="btn btn-primary">Send</button>
+            <button type="clear" class="btn btn-primary">Clear</button>
+        </form>
+    </div>
+
+    <div id="user-section">
+        <div class="user">You</div>
+    </div>
+</div>
+

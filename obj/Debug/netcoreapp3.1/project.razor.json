@@ -14397,8 +14397,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\Views\\Home\\RoomChat.cshtml",
+      "TargetPath": "Views\\Home\\RoomChat.cshtml",
       "FileKind": "mvc"
     },
     {

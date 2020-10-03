@@ -18,7 +18,7 @@ namespace ChatApp_SignalR_.Controllers
         public IActionResult Login()=> View();
         public IActionResult Register()=>View();
         
-
+        public IActionResult RoomChat()=>View();
         
 
         

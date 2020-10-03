@@ -1,0 +1,63 @@
+#room-section{
+    background-color: rgb(163, 101, 199);  
+    display: inline-block;
+    width: 25%;
+    position: absolute;
+    margin-left: 0;
+    height: 100%;
+    padding-left: 2%;
+    font-size: 20px;
+    padding-top: 2%;
+    border-radius: 10px;
+    text-align: center ;
+    padding-right: 2%;
+    
+}
+#user-section{
+    background-color: rgb(163, 101, 199);  
+    display: inline-block;   
+    width: 25%;
+    margin-right: 0;
+    margin-left: 75%;
+    position: absolute;
+    height: 100%;
+    padding-left: 2%;
+    font-size: 20px;
+    padding-top: 2%;
+    border-radius: 10px;
+    text-align: center;
+    padding-right: 2%;
+    
+    
+}
+#text-section{
+    display: inline-block;
+    position: absolute;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-image:url("https://images.wallpaperscraft.ru/image/minimalizm_nebo_oblaka_solntse_gory_ozero_pejzazh_95458_1920x1080.jpg");
+    height: 100%;
+    border-radius: 10px;
+    
+}
+.message-block{
+    width: 100%;
+    
+}
+#page{
+    background-color: rgb(163, 101, 199);  
+}
+button{
+    margin-right: 4%;
+    font-size: 20px;
+}
+html{
+    background-color: rgb(193, 130, 230);  
+}
+.Room{
+    text-align: center;
+    position: relative;
+}
