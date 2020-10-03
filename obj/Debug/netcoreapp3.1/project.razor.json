@@ -14390,6 +14390,42 @@
     "CSharpLanguageVersion": 800
   },
   "RootNamespace": "ChatApp_SignalR_",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "c:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }
