@@ -4,5 +4,5 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>ChatApp_SignalR_</RootNamespace>
   </PropertyGroup>
-
+  
 </Project>

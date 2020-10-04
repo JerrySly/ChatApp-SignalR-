@@ -1,7 +1,7 @@
 @{
     ViewData["Title"] = "Chat";
 }
-<link rel="stylesheet" href="~/css/chat.css">
+<link rel="stylesheet" href="~/css/chat.css" asp-append-version="true">
 <div id="page">
     <div id="room-section">
         <div class="header"><h2>List of rooms:</h2></div>
@@ -13,11 +13,9 @@
     <div id="text-section">
         <div id="messages-from-other">
         </div>
-        <form action="post">
-            <textarea name="message" class="message-block"></textarea>
-            <button type="submit" class="btn btn-primary">Send</button>
-            <button type="clear" class="btn btn-primary">Clear</button>
-        </form>
+        <textarea id="input-area" name="message" class="message-block"></textarea>
+        <button id="btn-send"  type="button" class="btn btn-primary">Send</button>
+        <button type="clear" class="btn btn-primary">Clear</button>
     </div>
 
     <div id="user-section">
@@ -27,4 +25,5 @@
         </div>
     </div>
 </div>
-
+<script src="~/lib/signalr.js"></script>
+<script type="text/javascript" src="~/js/chat.js"></script>

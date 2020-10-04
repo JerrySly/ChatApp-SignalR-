@@ -78,3 +78,8 @@ html{
     padding-bottom: 2%;
     color: rgb(98, 130, 219);
 }
+
+p{
+    color: rgb(199, 164, 219) ;
+    font-size: 16px;
+}
