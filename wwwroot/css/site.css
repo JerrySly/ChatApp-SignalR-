@@ -15,11 +15,14 @@ body{
   width: 100%;
   padding: 15px;
   margin: auto;
-  margin-top: 20%;
+  margin-top: 15%;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
 }
 #btn-login{
   width: 50%;
   height: 20%;
+}
+h2{
+  color: rgb(223, 145, 219);
 }

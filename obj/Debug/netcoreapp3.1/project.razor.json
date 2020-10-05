@@ -14402,8 +14402,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\Views\\Account\\Register.cshtml",
+      "TargetPath": "Views\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\Views\\Account\\Index.cshtml",
+      "TargetPath": "Views\\Account\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\Views\\Account\\Login.cshtml",
+      "TargetPath": "Views\\Account\\Login.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14412,18 +14427,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\Views\\Home\\Login.cshtml",
-      "TargetPath": "Views\\Home\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\Views\\Home\\Register.cshtml",
-      "TargetPath": "Views\\Home\\Register.cshtml",
       "FileKind": "mvc"
     },
     {

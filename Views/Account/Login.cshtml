@@ -1,22 +1,23 @@
 ﻿@model ChatApp_SignalR_.Models.LoginModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 <link type="text/css" rel="stylesheet" href="~/css/site.css" asp-append-version="true">
-
-<form asp-action="Login" asp-controller="Account" asp-anti-forgery="true">
+<div id="autho-section">
+<form class="form-signin" asp-action="Login" asp-controller="Account" asp-anti-forgery="true">
     <div class="validation" asp-validation-summary="ModelOnly"></div>
     <div>
         <div class="form-group">
             <label asp-for="Email">Введите Email</label><br />
-            <input type="text" asp-for="Email" />
+            <input class="form-control" type="text" asp-for="Email" />
             <span asp-validation-for="Email" /><br />
         </div>
         <div class="form-group">
             <label asp-for="Password">Введите пароль</label><br />
-            <input asp-for="Password" />
+            <input class="form-control" asp-for="Password" />
             <span asp-validation-for="Password" /><br />
         </div>
         <div class="form-group">
-            <input type="submit" value="Войти" class="btn" />
+            <button  id="btn-login" class="btn btn-primary" type="submit"  class="btn" >Войти</button>>
         </div>
     </div>
 </form>
+</div>

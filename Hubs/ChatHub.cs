@@ -13,12 +13,12 @@ namespace ChatApp_SignalR_.Hubs{
     {
         public async Task Send(string message, string userName)
         {
-            await Clients.All.SendAsync("Receive", message, userName);
+            await Clients.All.SendAsync("ReceiveMessage", message, userName);
         }
         [Authorize(Roles = "admin")]
         public async Task Notify(string message, string userName)
         {
-            await Clients.All.SendAsync("Receive", message, userName);
+            await Clients.All.SendAsync("ReceiveMessage", message, userName);
         }
     }
 }

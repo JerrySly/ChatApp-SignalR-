@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\laysa\\source\\repos\\ChatApp-SignalR-3\\ChatApp-SignalR-.csproj": {}
+    "C:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\ChatApp-SignalR-.csproj": {}
   },
   "projects": {
-    "C:\\Users\\laysa\\source\\repos\\ChatApp-SignalR-3\\ChatApp-SignalR-.csproj": {
+    "C:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\ChatApp-SignalR-.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\laysa\\source\\repos\\ChatApp-SignalR-3\\ChatApp-SignalR-.csproj",
+        "projectUniqueName": "C:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\ChatApp-SignalR-.csproj",
         "projectName": "ChatApp-SignalR-",
-        "projectPath": "C:\\Users\\laysa\\source\\repos\\ChatApp-SignalR-3\\ChatApp-SignalR-.csproj",
-        "packagesPath": "C:\\Users\\laysa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\laysa\\source\\repos\\ChatApp-SignalR-3\\obj\\",
+        "projectPath": "C:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\ChatApp-SignalR-.csproj",
+        "packagesPath": "C:\\Users\\Eugene\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\laysa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Eugene\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -81,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
