@@ -1,37 +1,49 @@
 ﻿<link rel="stylesheet" href="~/css/chat.css" asp-append-version="true">
-@if (User.Identity.IsAuthenticated)
-{
-    <a href="~/Account/Logout">Выйти</a>
-}
-else
-{
-    <a href="~/Account/Login">Войти</a>
-    <a href="~/Account/Register">Регистрация</a>
-}
 
-<div id="userNameBlock">
-    Введите ник:<br />
-    <input id="userName" type="text" />
-    <input id="loginBtn" type="button" value="Установить" />
-</div>
-<br />
-
-<div id="header"></div>
-<br />
-
-<div id="inputForm">
-    <input type="text" id="message" />
-    <input type="button" id="sendBtn" value="Отправить" />
-</div>
+<div id="userblock">
+    <div id="inout">
+        @if (User.Identity.IsAuthenticated)
+        {
+            <a href="~/Account/Logout">Выйти</a>
+            <div id="header"></div>
+        }
+        else
+        {
+            <p><a href="~/Account/Login">Войти</a></p>
+            <p><a href="~/Account/Register">Регистрация</a></p>
+        }
+    </div>
 @if (User.IsInRole("admin"))
 {
-    <br /><div id="notifyForm">
-        <input type="text" id="notify" />
-        <input type="button" id="notifyBtn" value="Уведомление" />
+    <div id="admin-panel">
+   
+        <h2>Admin Panel</h2>
+        <br /><div id="notifyForm">
+            <input type="text" id="notify" />
+            <button type="button" id="notifyBtn"  >Забанить</button>
+        </div>
+   
     </div>
 }
+</div>
+<div id="chatBody">
+    <div id="userNameBlock">
+        <h2>Введите ник:</h2><br />
+        <input id="userName" type="text" />
+        <input id="loginBtn" type="button" value="Установить" />
+    </div>
+    <br />
 
-<div id="chatroom"></div>
+
+    <br />
+    <div id="chatroom"></div>
+    <div id="inputForm">
+        <textarea  id="message"></textarea>
+        <div id="sendBtn">
+        <input type="button"  value="Отправить" ></input>
+        </div>
+    </div>
+</div>
 
 <script src="~/js/signalr/dist/browser/signalr.min.js"></script>
 <script>
@@ -41,7 +53,7 @@ else
 
     let userName = "";
     // получение сообщения от сервера
-    hubConnection.on("Receive", function (message, userName) {
+    hubConnection.on("ReceiveMessage", function (message, userName) {
 
         // создаем элемент <b> для имени пользователя
         let userNameElem = document.createElement("b");
@@ -60,23 +72,14 @@ else
     // установка имени пользователя
     document.getElementById("loginBtn").addEventListener("click", function (e) {
         userName = document.getElementById("userName").value;
-        document.getElementById("header").innerHTML = "<h3>Welcome " + userName + "</h3>";
+        document.getElementById("header").innerHTML = "<h2>Привет " + userName + "</h2>";
     });
     // отправка сообщения от простого пользователя
     document.getElementById("sendBtn").addEventListener("click", function (e) {
         let message = document.getElementById("message").value;
         hubConnection.invoke("Send", message, userName);
+        document.getElementById("message").value="";
     });
-    // если администратор добавляем блок
-    @if (User.IsInRole("admin"))
-    {
-        // отправка сообщения от администратора
-        <text>
-        document.getElementById("notifyBtn").addEventListener("click", function(e) {
-            let message = document.getElementById("notify").value;
-            hubConnection.invoke("Notify", message, userName);
-        });
-        </text>
-    }
+       
     hubConnection.start();
 </script>

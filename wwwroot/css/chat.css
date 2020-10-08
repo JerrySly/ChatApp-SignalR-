@@ -1,102 +1,108 @@
-#room-section{
-    background-color: rgb(163, 101, 199);  
-    display: inline-block;
-    width: 25%;
-    position: absolute;
-    margin-left: 0;
-    height: 100%;
-    font-size: 20px;
-    border-radius: 10px;
-    text-align: center ;
-    
-}
-#user-section{
-    background-color: rgb(163, 101, 199);  
-    display: inline-block;   
-    width: 25%;
-    margin-right: 0;
-    margin-left: 75%;
-    position: absolute;
-    height: 100%;
-    font-size: 20px;
-    border-radius: 10px;
-    text-align: center;
-    
-    
-}
-#text-section{
-    display: inline-block;
-    position: absolute;
-    margin-left: 25%;
-    margin-right: 25%;
-    width: 50%;
-    padding-left: 2%;
-    padding-right: 2%;
-    background-image:url("https://images.wallpaperscraft.ru/image/minimalizm_nebo_oblaka_solntse_gory_ozero_pejzazh_95458_1920x1080.jpg");
-    height: 100%;
-    border-radius: 10px;
-    
-}
-.message-block{
-    width: 100%;
-    
-}
-#page{
-    background-color: rgb(163, 101, 199);  
-}
-button{
-    margin-right: 4%;
-    font-size: 20px;
-}
 html{
-    background-color: rgb(193, 130, 230);  
+    overflow-x: hidden;
+    overflow-y:hidden;
 }
-.room{
-    padding-top: 2%;
+body{
+    background-image:url("https://images.wallpaperscraft.ru/image/minimalizm_nebo_oblaka_solntse_gory_ozero_pejzazh_95458_1920x1080.jpg");
+}
+#chatBody{
+    position: absolute;
+    height: 100%;
+    margin-left: 30%;
+    width: 70%;
+    display: block;
+    float: left;
+    background-color: lightpink;
+}
+#inout{
+    background-color: rgb(233, 168, 168);
+    padding: 4% 10% 4% 10%;
+    border-radius: 12px;
+    display: inline-block;
+    margin-top: 20%;
+}
+#inout a{
+    font-size: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#inout a:hover{
+    text-decoration: none;
+    color: black;
+}
+#userblock{
+    height: 100%;
+    width: 30%;
+    display: block;
+    float: left;
     text-align: center;
-    position: relative;
-    color: rgb(255, 255, 255);
+    
+
 }
-.user{
-    padding-top: 2%;
+#userNameBlock{
     text-align: center;
-    position: relative;
-    color: rgb(255, 255, 255);
 }
-.header{
-    position: relative;
-    background-color: rgb(199, 164, 219);
-    width: 100%;
-    border-bottom: rgb(199, 164, 219);
-    border-left: rgb(199, 164, 219);
-    border-top: rgb(199, 164, 219);
-    border-right: rgb(199, 164, 219);
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 10px;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    color: rgb(98, 130, 219);
+#admin-panel{
+    background-color:lightpink;
+    margin-top: 50%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    display: inline-block;
+    height: 100%;
+    border-radius: 12px;
+}
+#chatroom{
+    background-color: rgb(219, 130, 235);
+    height: 70%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 2%;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-p{
-    color: rgb(199, 164, 219) ;
-    font-size: 16px;
+#inputForm{
+    width: 100%;
+    position: relative;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+#notify{
+    width: 100%;
+}
+#sendBtn{
+    
+    display: block;
+    margin-right: 5%;
+    float: right;       
     
 }
-
-#messages-from-other{
-    overflow-y: auto;
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    height: 80%;
-
+#sendBtn input{
+    padding: 10% 10% 10% 10%;
+    border-radius: 12px;
+    font-size: 20px;
+    background-color: rgb(219, 130, 235);;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10%;
 }
-
-#input-block{
-    position: absolute;
-    width: 90%;
-    bottom: 0;
-    height: 15%;
+#notifyBtn{
+    border-radius: 12px;
+    font-size: 20px;
+    background-color:rgb(219, 130, 235);;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2% 10% 2% 10%;
+    margin-top: 5%;
+}
+#sendBtn input:hover{
+    color: white;
+}
+#notifyBtn:hover{
+    color: white;
+}
+textarea{
+display: inline-block;
+width: 80%;
 }
