@@ -48,18 +48,23 @@ namespace ChatApp_SignalR_.Controllers
             }
             return View(model);
         }
-        [HttpGet]
+      [HttpGet]
+    public IActionResult  Register(){
+        return View();
+    }
+    [HttpPost]
         public async Task<IActionResult>  Register(RegisterModel register)
         {
             if(ModelState.IsValid){
-               if( _context.Users.Where(x=>x.Email==register.Email).First()!=null)
-               return View(register);
+               if( _context.Users.Where(x=>x.Email==register.Email).Count()!=0)
+                    return View(register);
                else{
                    User user=new User();
                    user.Email=register.Email;
                    user.Password=register.Password;
-                   user.Role=new Role { Id = 2, Name = "user" };
-                   _context.Users.Add(user);
+                   user.Role=_context.Roles.ToArray()[1];
+                     _context.Users.Add(user);
+                     _context.SaveChanges();
                     await Authenticate(user);
                 return RedirectToAction("Index", "Account");// переадресация на метод Index
                }
