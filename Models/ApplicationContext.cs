@@ -31,7 +31,7 @@ namespace ChatApp_SignalR_.Models
             User simpleUser1 = new User { Id = 3, Email = "bob@mail.com", Password = "123456", RoleId = userRole.Id };
             User simpleUser2 = new User { Id = 4, Email = "sam@mail.com", Password = "123456", RoleId = userRole.Id };
 
-            modelBuilder.Entity<Role>().HasData(new Role[] { adminRole, userRole });
+            modelBuilder.Entity<Role>().HasData(new Role[] { adminRole, userRole,bannedRole });
             modelBuilder.Entity<User>().HasData(new User[] { adminUser1, adminUser2, simpleUser1, simpleUser2 });
             base.OnModelCreating(modelBuilder);
         }

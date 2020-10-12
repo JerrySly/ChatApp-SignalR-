@@ -41,8 +41,10 @@ namespace ChatApp_SignalR_.Controllers
                     .FirstOrDefaultAsync(u => u.Email == model.Email && u.Password == model.Password);
                 if (user != null)
                 {
+                    if(user.RoleId!=3){
                     await Authenticate(user); // аутентификация
                     return RedirectToAction("Index", "Account");// переадресация на метод Index
+                    }
                 }
                 ModelState.AddModelError("", "Некорректные логин и(или) пароль");
             }
@@ -88,5 +90,17 @@ namespace ChatApp_SignalR_.Controllers
                 ClaimsIdentity.DefaultRoleClaimType);
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(id));
         }
+        [HttpPost]
+        public  IActionResult  Ban(string email){
+            if(!string.IsNullOrEmpty(email)){
+                User user= _context.Users.Where(x=>x.Email==email).First();
+                if(user!=null && user.RoleId!=0){
+                    user.RoleId=3; 
+                    _context.SaveChanges();
+                }
+                
+            }
+            return RedirectToAction("Index");
+        } 
     }
 }

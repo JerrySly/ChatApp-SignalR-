@@ -19,8 +19,10 @@
    
         <h2>Admin Panel</h2>
         <br /><div id="notifyForm">
-            <input type="text" id="notify" />
-            <button type="button" id="notifyBtn"  >Забанить</button>
+        <form asp-action="Ban" asp-controller="Account">
+            <input type="text" id="notify" name="email" />
+            <button type="submit" id="notifyBtn"  >Забанить</button>
+        </form>
         </div>
    
     </div>
@@ -77,6 +79,7 @@
     // отправка сообщения от простого пользователя
     document.getElementById("sendBtn").addEventListener("click", function (e) {
         let message = document.getElementById("message").value;
+       
         hubConnection.invoke("Send", message, userName);
         document.getElementById("message").value="";
     });
