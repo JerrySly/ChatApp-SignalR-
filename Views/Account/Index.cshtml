@@ -74,14 +74,17 @@
     // установка имени пользователя
     document.getElementById("loginBtn").addEventListener("click", function (e) {
         userName = document.getElementById("userName").value;
+        if( String(userName)!=null && String(userName)!=undefined &&  String(userName).trim()!=""){
         document.getElementById("header").innerHTML = "<h2>Привет " + userName + "</h2>";
+        }
     });
     // отправка сообщения от простого пользователя
     document.getElementById("sendBtn").addEventListener("click", function (e) {
         let message = document.getElementById("message").value;
-       
+        if(String(message).trim()!="" && document.getElementById("header").innerHTML!=""){
         hubConnection.invoke("Send", message, userName);
         document.getElementById("message").value="";
+        }
     });
        
     hubConnection.start();
