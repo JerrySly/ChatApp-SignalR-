@@ -2,20 +2,24 @@ html{
     overflow-x: hidden;
     overflow-y:hidden;
 }
+.container {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
 body{
     background-image:url("https://images.wallpaperscraft.ru/image/minimalizm_nebo_oblaka_solntse_gory_ozero_pejzazh_95458_1920x1080.jpg");
 }
-#chatBody{
+#chatBody {
     position: absolute;
     height: 100%;
     margin-left: 30%;
     width: 70%;
     display: block;
     float: left;
-    background-color: lightpink;
+    
 }
-#inout{
-    background-color: rgb(233, 168, 168);
+#inout {
+    background-color: rgba(247, 183, 193, 0.72);
     padding: 4% 10% 4% 10%;
     border-radius: 12px;
     display: inline-block;
@@ -24,26 +28,26 @@ body{
 #inout a{
     font-size: 20px;
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 #inout a:hover{
     text-decoration: none;
     color: black;
 }
-#userblock{
+#userblock {
     height: 100%;
     width: 30%;
     display: block;
     float: left;
     text-align: center;
     
-
 }
-#userNameBlock{
+#userNameBlock {
     text-align: center;
+    
 }
-#admin-panel{
-    background-color:lightpink;
+#admin-panel {
+    background-color: rgba(247, 183, 193, 0.72);
     margin-top: 50%;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -53,17 +57,19 @@ body{
     height: 100%;
     border-radius: 12px;
 }
-#chatroom{
-    background-color: rgb(219, 130, 235);
-    height: 70%;
+#chatroom {
+    background-color: rgba(219, 130, 235, 0.5);
+    height: 90%;
     overflow-y: scroll;
     display: flex;
     flex-direction: column-reverse;
     padding-left: 2%;
     font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    resize: none;
+    box-sizing: border-box;
 }
-
 #inputForm{
     width: 100%;
     position: relative;
@@ -73,29 +79,38 @@ body{
 #notify{
     width: 100%;
 }
-#sendBtn{
+/*#sendBtn{
     
     display: block;
     margin-right: 5%;
     float: right;       
     
-}
-#sendBtn input{
-    padding: 10% 10% 10% 10%;
-    border-radius: 12px;
+}*/
+#sendBtn input {
+    border-radius: 3px;
     font-size: 20px;
-    background-color: rgb(219, 130, 235);;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 10%;
+    margin-bottom: 1%;
+    color: aliceblue;
+    background-color: rgba(219, 130, 235, 0.7);
 }
-#notifyBtn{
+#enterBtn input {
+    border-radius: 2px;
+    font-size: 16px;
+    
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 1%;
+    color: aliceblue;
+}
+/*#notifyBtn{
     border-radius: 12px;
     font-size: 20px;
     background-color:rgb(219, 130, 235);;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 2% 10% 2% 10%;
-    margin-top: 5%;
-}
+    margin-top: 5%;*/
+    /*}*/
 #sendBtn input:hover{
     color: white;
 }

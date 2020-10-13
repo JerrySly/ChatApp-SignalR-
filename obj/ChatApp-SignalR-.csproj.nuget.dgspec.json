@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\ChatApp-SignalR-.csproj": {}
+    "C:\\Users\\laysa\\Source\\Repos\\ChatApp-SignalR-4\\ChatApp-SignalR-.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\ChatApp-SignalR-.csproj": {
+    "C:\\Users\\laysa\\Source\\Repos\\ChatApp-SignalR-4\\ChatApp-SignalR-.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\ChatApp-SignalR-.csproj",
+        "projectUniqueName": "C:\\Users\\laysa\\Source\\Repos\\ChatApp-SignalR-4\\ChatApp-SignalR-.csproj",
         "projectName": "ChatApp-SignalR-",
-        "projectPath": "C:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\ChatApp-SignalR-.csproj",
-        "packagesPath": "C:\\Users\\Eugene\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eugene\\GitHubProjects\\SignalRChat\\ChatApp-SignalR-\\obj\\",
+        "projectPath": "C:\\Users\\laysa\\Source\\Repos\\ChatApp-SignalR-4\\ChatApp-SignalR-.csproj",
+        "packagesPath": "C:\\Users\\laysa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\laysa\\Source\\Repos\\ChatApp-SignalR-4\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Eugene\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\laysa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,6 +38,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Extended.Wpf.Toolkit": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
               "version": "[3.1.8, )"
@@ -81,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

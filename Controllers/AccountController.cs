@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using ChatApp_SignalR_.Models;
 using Sitecore.FakeDb;
+using Xceed.Wpf.Toolkit;
 //using Microsoft.AspNetCore.Identity.UI.V3.Pages.Account.Internal;
 
 namespace ChatApp_SignalR_.Controllers
@@ -71,7 +72,7 @@ namespace ChatApp_SignalR_.Controllers
                 return RedirectToAction("Index", "Account");// переадресация на метод Index
                }
             }
-            return View(register);
+            return RedirectToAction("Ban", "Account");// переадресация на метод Ban
         }
         
         public async Task<IActionResult> Logout()
