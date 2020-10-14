@@ -31,6 +31,11 @@ namespace ChatApp_SignalR_.Controllers
         {
             return View();
         }
+        [HttpGet]
+        public IActionResult Ban()
+        {
+            return View();
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginModel model)
@@ -45,6 +50,9 @@ namespace ChatApp_SignalR_.Controllers
                     if(user.RoleId!=3){
                     await Authenticate(user); // аутентификация
                     return RedirectToAction("Index", "Account");// переадресация на метод Index
+                    }
+                    else{
+                    return RedirectToAction("Ban");
                     }
                 }
                 ModelState.AddModelError("", "Некорректные логин и(или) пароль");
@@ -99,6 +107,7 @@ namespace ChatApp_SignalR_.Controllers
                     user.RoleId=3; 
                     _context.SaveChanges();
                 }
+               
                 
             }
             return RedirectToAction("Index");
