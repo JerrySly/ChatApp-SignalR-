@@ -57,9 +57,21 @@ body{
     height: 100%;
     border-radius: 12px;
 }
+.modal {
+    overflow-y: scroll;
+}
 #chatroom {
+    overflow-y: scroll;
+    height: 500px;
+    background-color: rgba(219, 130, 235, 0.5);
+    overflow-y: scroll; /* прокрутка по вертикали */
+}
+/*#chatroom {
+    position: fixed;
+    overflow-y: scroll;
     background-color: rgba(219, 130, 235, 0.5);
     height: 90%;
+    min-height: 90%;
     overflow-y: scroll;
     display: flex;
     flex-direction: column-reverse;
@@ -69,12 +81,14 @@ body{
     text-align: left;
     resize: none;
     box-sizing: border-box;
-}
-#inputForm{
+    flex-grow: 0;
+}*/
+#inputForm {
     width: 100%;
     position: relative;
     margin-top: 1%;
     margin-left: 1%;
+    padding-bottom: 7%
 }
 #notify{
     width: 100%;
