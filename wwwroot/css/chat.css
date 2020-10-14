@@ -16,7 +16,7 @@ body{
     width: 70%;
     display: block;
     float: left;
-    
+    border-radius: 12px;
 }
 #inout {
     background-color: rgba(247, 183, 193, 0.72);
@@ -40,14 +40,16 @@ body{
     display: block;
     float: left;
     text-align: center;
-    
+    border-radius: 12px;
 }
 #userNameBlock {
     text-align: center;
-    
+    margin-top: 20px;
+    background-color: rgba(219, 130, 235, 0.5);
+    border-radius: 12px;
 }
 #admin-panel {
-    background-color: rgba(247, 183, 193, 0.72);
+    background-color: rgba(247, 183, 193, 0.5);
     margin-top: 50%;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -62,10 +64,21 @@ body{
 }
 #chatroom {
     overflow-y: scroll;
-    height: 500px;
+    height: 450px;
     background-color: rgba(219, 130, 235, 0.5);
     overflow-y: scroll; /* прокрутка по вертикали */
+    border-radius: 21px;
+    box-shadow: rgb(75, 0, 130) 0px 0px 7px;
+    margin-right: 10px;
+    text-align:left;
+    padding: 10px;
 }
+#ban{
+    height:300px;
+    width: auto;
+    margin-top:150px;
+}
+
 /*#chatroom {
     position: fixed;
     overflow-y: scroll;

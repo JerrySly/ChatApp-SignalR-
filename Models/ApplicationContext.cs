@@ -30,6 +30,7 @@ namespace ChatApp_SignalR_.Models
             User adminUser2 = new User { Id = 2, Email = "tom@mail.com", Password = "123456", RoleId = adminRole.Id };
             User simpleUser1 = new User { Id = 3, Email = "bob@mail.com", Password = "123456", RoleId = userRole.Id };
             User simpleUser2 = new User { Id = 4, Email = "sam@mail.com", Password = "123456", RoleId = userRole.Id };
+            User bannedUser1 = new User { Id = 5, Email = "ban@mail.com", Password = "123456", RoleId = bannedRole.Id };
 
             modelBuilder.Entity<Role>().HasData(new Role[] { adminRole, userRole,bannedRole });
             modelBuilder.Entity<User>().HasData(new User[] { adminUser1, adminUser2, simpleUser1, simpleUser2 });
